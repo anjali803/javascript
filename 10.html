@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Dom</title>
+
+</head>
+
+<body>
+    <h1>Welcome to learn HTML DOM</h1>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <script>
+        //DOM is Document object Model 
+        //With html Dom ,JS can access and change all the elements of html dcument
+
+        //get id element
+        let hello = document.getElementById('hello');
+        console.log(main);
+
+
+        //get class element
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+
+        //using querySelector
+        let sele = document.querySelector('.container')
+        console.log(sele)
+        
+        let nav = document.getElementById('nav')
+        console.log(nav)
+
+        let sel = document.querySelectorAll('#nav>li')
+        console.log(sel);
+
+    </script>
+</body>
+
+
+</html>

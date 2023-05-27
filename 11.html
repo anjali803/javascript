@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script events</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Welcome to events in javascript</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolorem tempore similique iusto aut ratione aspernatur laborum quod et sit exercitationem velit. Ipsam fugiat quam quibusdam est! Illum doloremque perferendis labore ullam architecto recusandae, earum, magni reprehenderit, voluptatum ratione necessitatibus. At, quasi cumque ea repellendus, id obcaecati quo placeat dolorem non sunt nesciunt! Alias modi animi error obcaecati corrupti doloribus quo. Laboriosam, modi. Id sapiente culpa maiores? Exercitationem tempore alias error quas repellat voluptatibus quo, quam vel adipisci veritatis illum assumenda! Obcaecati a aperiam id, quis quos possimus? Atque, repellat. Necessitatibus accusamus, ea dolorem temporibus totam molestiae esse! Nihil, delectus?</p>
+        <button id="btn" onclick="toggleHide()">show/Hide</button>
+        <script>
+            function toggleHide(){
+                let btn = document.getElementById('btn')
+                let para = document.getElementById('para')
+                if(para.style.display!='none')
+                {
+                    console.log(para.style.display='none');
+                }
+                else{
+                    console.log(para.style.display='block');
+                
+                }
+            }
+
+        //mouseover and mouseout
+        let para = document.getElementById('para')
+        para.addEventListener("mouseover" ,function run(){
+            console.log("mouse inside")
+        })
+
+        </script>
+    </div>
+</body>
+</html>

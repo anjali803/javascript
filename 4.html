@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+    <script>
+        //declaring a string
+        
+        var str = 'welcome to string functions'
+        console.log(str)
+
+        //extracting the index of welcome // first occurence of a substring
+        var firstindexof = str.indexOf('welcome')
+        console.log(firstindexof) //index of welcome is 0
+
+        //extracting the index of function  //last occurence of a substring
+        var lastindexof = str.lastIndexOf('functions')
+        console.log(lastindexof) 
+
+        //substring from string
+
+        var substr = str.slice(0,7) //negative slicing can also be used
+        console.log(substr)  // this will give welcome
+
+        var substr2 = str.substring(11,17)  //substing function used
+        console.log(substr2) // this will give string
+
+        var substr3 = str.substr(17,20)  //substr is used
+        console.log(substr3)  //this will give functions
+
+        //replacing a string with another
+        var replaceme = str.replace('string function','java script')
+        console.log(replaceme)   // here string function string is replaced be java script
+
+        //to uppercase and lowercase
+        var javascript = 'This is the fun way to study javascript string functions'
+        console.log(javascript.toUpperCase())
+        console.log(javascript.toLowerCase())
+
+        //string concat
+        var newstring = str.concat(javascript)
+        console.log(newstring)
+
+        //triming blank space
+        var withspace = ' this     is   not  what you         think'
+        console.log(withspace)
+        console.log(withspace.trim())  // this will remove space from the start and end
+
+        //extracting charaters
+        var str = str.charAt(5)
+        console.log(str)
+
+    </script>
+    <style>
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to learn String Function</h1>
+</body>
+</html>

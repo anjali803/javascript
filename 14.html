@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <h1>Weclome to learn arrow Functions</h1>
+    <script>
+
+        //Normal way of writing functions
+        function msg(){
+            console.log("come lets look at some shortcuts")
+        }
+        msg();
+
+        //Writing functions using arrow--> Arrow functions
+        msg=()=>{
+            console.log("hello Anjali")
+        }
+        msg();
+
+        //shorting this again
+        msg=()=>console.log("hello kp");
+        msg();
+
+        let sum=(a,b)=>a+b;
+        let half=a=>a/2;
+
+
+        //An object in a function and if u use arrow functions in it,Then the 'this' is a 'parent this'
+        let obj1={
+            greeting: "Good Morning",
+            names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting + " Kukdoo Koo " + student);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            text-align: center;
+            background-color: burlywood;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Welcome to learn  how to set date and time</h1>
+        current time <span id="time"> </span>
+    </div>
+    <script>
+        console.log("Date and time in javascript")
+        //This will be showing the present date
+        let date = new Date()
+        console.log(date)
+
+        //This will display a date ,that date is the refereing date
+        let refedate= new Date(0)
+        console.log(refedate)
+
+        //Here will are giving the date directly ,and so it will be showing in the console
+        let directdate = new Date('2000-02-25')
+        console.log(directdate)
+
+        //another way(year,month,date,hours etc....)
+        let newDate = new Date(2002 , 4 ,3 ,5,34)
+        console.log(newDate)
+ 
+        //Getting year,date,hours separatly
+        let year = newDate.getFullYear()
+        console.log(year)
+
+        let dt = newDate.getDate()
+        console.log(dt)
+
+        let hr = newDate.getHours()
+        console.log(hr)
+
+        //Already set cheyth vecha date ndakil .. ath chnge cheyam
+        let updatedate = newDate.setDate(21)
+        console.log(updatedate)
+
+        //Now we will be displaying the current time in the browser 
+        function currentTime(){
+            time.innerHTML =new Date()
+        }
+        setInterval(currentTime,1000)
+        
+
+    </script>
+</body>
+</html>

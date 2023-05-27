@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditional statements</title>
+    <script>
+        // Here var is a globale variable declaration
+        // first i declared Anjali then kp with same var name ,in other programming languge it will show error but here we didnt got any erroe instead of that 'Anjali'is being overwritten by 'Kp'
+        var name = "Anjali"
+        var name = "kp"
+        console.log(name)
+
+
+        //here on using Let the problem with var can be resolved 
+        //on declaring the same variable name within a block will not overwrite the string
+        //here first it will print 'kp'-(outside block) then 'Anjali'-(inside block)
+        let urname = 'Anjali'
+        {
+            let urname = 'kp'
+            console.log(urname)
+        }
+        console.log(urname)
+
+        //use let no onwards instead of var-------------------------------------------
+
+        //declaring const 
+        const hername = 'sneha'  //This will remain constant through out the program .ie cannot be replaced with other variable ... var or let can be changed along the program but not const
+        console.log(hername)
+
+        //conditional statements ---if else and switch case
+
+        let age = 30;
+        if(age >18){   //if this condition is true the inside the loop will excute
+            console.log("The person can married")
+        }
+        else{  // if it is flase then this will excute
+            console.log("The person can not be married")
+        }
+
+        //if else ladder can also be used --ie to check multiple conditions else if can be used with in if else ..
+
+        const agevalue = 20; 
+        switch (agevalue){
+            case 10:
+                console.log("This person is 10")
+                break;
+            case 20:
+                console.log("This person is 20")
+                break;
+            case 30:
+                console.log("This person is 30")
+                break;
+            default:
+                console.log("This person doesnt belong to any")
+                break;
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>javascript scope and conditional statements ... come lets learn!</h1>
+</body>
+</html>
